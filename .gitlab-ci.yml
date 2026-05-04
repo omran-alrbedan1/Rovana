@@ -6,7 +6,7 @@ variables:
   DEPLOY_DIR: /opt/abusara/website
   IMAGE_TAG: latest
   APP_ENV: production
-  APP_PORT: 3001
+  APP_PORT: 3004
   COMPOSE_PROJECT_NAME: abusara-prod
   CONTAINER_NAME: abusara_website_prod
 
