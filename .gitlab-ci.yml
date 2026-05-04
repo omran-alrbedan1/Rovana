@@ -1,0 +1,40 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  DEPLOY_DIR: /opt/abusara/website
+  IMAGE_TAG: latest
+  APP_ENV: production
+  APP_PORT: 3001
+  COMPOSE_PROJECT_NAME: abusara-prod
+  CONTAINER_NAME: abusara_website_prod
+
+build_prod:
+  stage: build
+  tags:
+    - server213
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+  script:
+    - docker build -t abusara-frontend:${IMAGE_TAG} .
+
+deploy_prod:
+  stage: deploy
+  tags:
+    - server213
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+  script:
+    - mkdir -p ${DEPLOY_DIR}
+    - cp docker-compose.yml ${DEPLOY_DIR}/docker-compose.yml
+    - cd ${DEPLOY_DIR}
+    - |
+      echo "IMAGE_TAG=${IMAGE_TAG}" > .env
+      echo "APP_ENV=${APP_ENV}" >> .env
+      echo "APP_PORT=${APP_PORT}" >> .env
+      echo "CONTAINER_NAME=${CONTAINER_NAME}" >> .env
+      echo "COMPOSE_PROJECT_NAME=${COMPOSE_PROJECT_NAME}" >> .env
+    - docker compose --env-file .env config
+    - docker compose --env-file .env up -d --pull never --force-recreate --remove-orphans
+    - docker image prune -f
