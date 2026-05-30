@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
     ],
-    sitemap: "https://rovana-git-main-omran-alrbedan1s-projects.vercel.app/sitemap.xml",
+    sitemap: "https://rovana-gilt.vercel.app/sitemap.xml",
   };
 }

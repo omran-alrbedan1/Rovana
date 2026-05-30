@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const BASE_URL = "https://rovana-git-main-omran-alrbedan1s-projects.vercel.app";
+const BASE_URL = "https://rovana-gilt.vercel.app";
 
 export const defaultMetadata = {
   siteName: "Rovana Jewelry",

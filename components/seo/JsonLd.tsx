@@ -3,9 +3,9 @@ export function JewelryStoreSchema() {
     "@context": "https://schema.org",
     "@type": "JewelryStore",
     name: "مجوهرات روفانا",
-    url: "https://rovana-git-main-omran-alrbedan1s-projects.vercel.app",
-    logo: "https://rovana-git-main-omran-alrbedan1s-projects.vercel.app/assets/logo-as.jpg",
-    image: "https://rovana-git-main-omran-alrbedan1s-projects.vercel.app/assets/logo-as.jpg",
+    url: "https://rovana-gilt.vercel.app",
+    logo: "https://rovana-gilt.vercel.app/assets/logo-as.jpg",
+    image: "https://rovana-gilt.vercel.app/assets/logo-as.jpg",
     description: "متجرك المفضل لارقى مجوهرات الذهب والألماس 💫",
     telephone: "+963981117927",
     address: {
@@ -35,8 +35,8 @@ export function OrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "مجوهرات روفانا",
-    url: "https://rovana-git-main-omran-alrbedan1s-projects.vercel.app",
-    logo: "https://rovana-git-main-omran-alrbedan1s-projects.vercel.app/assets/logo-as.jpg",
+    url: "https://rovana-gilt.vercel.app",
+    logo: "https://rovana-gilt.vercel.app/assets/logo-as.jpg",
     description: "متجرك المفضل لارقى مجوهرات الذهب والألماس",
     contactPoint: {
       "@type": "ContactPoint",
@@ -67,7 +67,7 @@ export function CustomDesignServiceSchema() {
     "@type": "Service",
     name: "تصميم المجوهرات المخصص",
     description: "خدمة تصميم مجوهرات ذهبية حسب الطلب. شاركنا فكرتك وسيقوم حرفيونا المهرة بإحيائها.",
-    url: "https://rovana-git-main-omran-alrbedan1s-projects.vercel.app/ar/custom-design",
+    url: "https://rovana-gilt.vercel.app/ar/custom-design",
     provider: {
       "@type": "JewelryStore",
       name: "مجوهرات روفانا",

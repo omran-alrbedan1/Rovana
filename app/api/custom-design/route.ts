@@ -128,7 +128,7 @@ export async function POST(req: NextRequest) {
             <td style="background:#1a1a1a;padding:36px 28px;text-align:center;">
               <div style="width:40px;height:2px;background:#E6C687;margin:0 auto 16px;"></div>
               <div style="margin-bottom:16px;">
-                <img src="https://rovana-git-main-omran-alrbedan1s-projects.vercel.app/assets/logo-as-CZhQ19Bt.jpg" alt="Rovana Jewelry" style="width:60px;height:60px;border-radius:50%;border:2px solid #E6C687;">
+                <img src="https://rovana-gilt.vercel.app/assets/logo-as-CZhQ19Bt.jpg" alt="Rovana Jewelry" style="width:60px;height:60px;border-radius:50%;border:2px solid #E6C687;">
               </div>
               <p style="font-size:10px;color:#E6C687;letter-spacing:0.3em;text-transform:uppercase;margin:0 0 8px;font-family:Arial,sans-serif;">Rovana Jewelry</p>
               <p style="font-size:24px;color:#ffffff;margin:0;font-weight:300;font-family:Arial,sans-serif;">New Custom Design Request</p>
